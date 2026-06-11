@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            background: linear-gradient(to bottom,rgb(52, 231, 172) 55%, white 45%);
+            margin: 0;
+            height: 99vh;
+        }
+        
+        
+        .container-box {
+            max-width: 216px;
+            background-color: whitesmoke;
+            padding: 3px;
+            border-radius: 20px;
+            margin: 4px;
+            
+        }
+        .container-box a i{
+            border-radius: 20px;
+            padding: 3px;
+            
+        }
+        .container-box a i:hover{
+            background-color: rgb(221, 220, 220);
+        }
+        .up {
+            display: flex;
+            gap: 2rem;
+        }
+        .starttext{
+            
+            margin-top: 20px;
+            
+
+        }
+        .text1{
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-left: 100px;
+            width: 400px;
+            font-size: 50px;
+            color: whitesmoke;
+            
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        
+        .startbutton{
+            border: 1px solid black;
+            width: 230px;
+            height: 55px;
+            font-size: 20px;
+            font-weight: 100;
+            color: black;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            margin-left: 150px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .startbutton:hover{
+            background-color: rgb(221, 220, 220);
+        }
+        .under-img{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 40px;
+            
+        }
+        p{
+            font-size:20px;
+            text-align: center;
+            margin-top:80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+    </style>
+</head>
+<body>
+    <form class="container-box">
+    
+    <dev class="up">
+        <a href="landing.html"><i style="color: black;" class="material-symbols-rounded">home</i></a>
+        <a href="/new.html"><i style="color: black;" class="material-symbols-rounded">settings</i></a>
+        <a href="/new.html"><i style="color: black;" class="material-symbols-rounded">account_circle</i></a>
+        <a href="/new.html"><i style="color: black;" class="material-symbols-rounded">menu</i></a>
+    </dev>
+    </form>
+    
+    <dev class="starttext">
+    <h1 class="text1">Welcome To Ezlife</h1>
+    </dev>
+
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="study.html">Study</a>
+    <a href="#">Website</a>
+    <a href="#">Tesk</a>
+  </div>
+</div>
+    <dev class="start">
+        <button class="startbutton" style="font-size:20px;cursor:pointer" onclick="openNav()">Get Start</button>
+    </dev>
+    <dev>
+        <p>
+            you can use this web for </p>
+
+    </dev>
+    <dev class="under-img">
+    
+        <i style="color: black; font-size:60px;" class="material-symbols-rounded">business_center<i>
+        <i style="color: black; font-size:60px;" class="material-symbols-rounded">school</i>
+        <i style="color: black; font-size:60px;" class="material-symbols-rounded">deployed_code</i>
+    </dev>
+        
+    
+        <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+    
+</body>
+</html>
